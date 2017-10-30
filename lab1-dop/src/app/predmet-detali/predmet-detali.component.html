@@ -1,0 +1,12 @@
+<h3>Predmet</h3>
+<div *ngIf="predmet" id="container">
+  <ul *ngFor="let s of predmet">
+    <li (click)="details(s)"> {{s.ime}} {{s.prezime}}</li>
+  </ul>
+</div>
+
+<h3>Detali</h3>
+<div id="details">
+  {{ime}}:{{profesor}}<br/>
+  {{semestar}} : {{krediti}}
+</div>
